@@ -16,5 +16,151 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{dirac}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59342ede3a101402b34939644b51ad06}{%
+           family={Dirac},
+           familyi={D\bibinitperiod},
+           given={Paul\bibnamedelimb Adrien\bibnamedelima Maurice},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{59342ede3a101402b34939644b51ad06}
+      \strng{fullhash}{59342ede3a101402b34939644b51ad06}
+      \strng{bibnamehash}{59342ede3a101402b34939644b51ad06}
+      \strng{authorbibnamehash}{59342ede3a101402b34939644b51ad06}
+      \strng{authornamehash}{59342ede3a101402b34939644b51ad06}
+      \strng{authorfullhash}{59342ede3a101402b34939644b51ad06}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780198520115}
+      \field{series}{International series of monographs on physics}
+      \field{title}{The Principles of Quantum Mechanics}
+      \field{year}{1981}
+      \keyw{physics}
+    \endentry
+    \entry{website:ArduinoLabview}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6847528dc456b294ffb326481079eb2b}{%
+           family={{National Instruments}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6847528dc456b294ffb326481079eb2b}
+      \strng{fullhash}{6847528dc456b294ffb326481079eb2b}
+      \strng{bibnamehash}{6847528dc456b294ffb326481079eb2b}
+      \strng{authorbibnamehash}{6847528dc456b294ffb326481079eb2b}
+      \strng{authornamehash}{6847528dc456b294ffb326481079eb2b}
+      \strng{authorfullhash}{6847528dc456b294ffb326481079eb2b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Arduino™ Compatible Compiler for LabVIEW by Aledyne-TSXperts}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tsxperts.com/arduino-compatible-compiler-for-labview/
+      \endverb
+      \verb{url}
+      \verb https://www.tsxperts.com/arduino-compatible-compiler-for-labview/
+      \endverb
+    \endentry
+    \entry{website:OPENSOURCEHW}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=184a913e122c18374ca03bc02b30c050}{%
+           family={{Red Hat, Inc.}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=a82007c47b25723539a00ff94e8b3d27}{%
+           family={{Red Hat}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{fullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{bibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authorbibnamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authornamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authorfullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{shortauthorbibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{shortauthornamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{shortauthorfullhash}{a82007c47b25723539a00ff94e8b3d27}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{What is open hardware?}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opensource.com/resources/what-open-hardware
+      \endverb
+      \verb{url}
+      \verb https://opensource.com/resources/what-open-hardware
+      \endverb
+    \endentry
+    \entry{website:OPENSOURCESW}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=184a913e122c18374ca03bc02b30c050}{%
+           family={{Red Hat, Inc.}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=a82007c47b25723539a00ff94e8b3d27}{%
+           family={{Red Hat}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{fullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{bibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authorbibnamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authornamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authorfullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{shortauthorbibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{shortauthornamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{shortauthorfullhash}{a82007c47b25723539a00ff94e8b3d27}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{What is open source?}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opensource.com/resources/what-open-source
+      \endverb
+      \verb{url}
+      \verb https://opensource.com/resources/what-open-source
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
