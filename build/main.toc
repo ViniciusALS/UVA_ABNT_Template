@@ -1,5 +1,0 @@
-\babel@toc {portuguese}{}\relax 
-\contentsline {section}{\numberline {1}Problem 1: Problem Statement Title}{3}{section.1}%
-\contentsline {section}{\numberline {2}Fazendo referncias bibliograficas}{5}{section.2}%
-\contentsline {section}{\numberline {3}Hotkeys}{5}{section.3}%
-\contentsline {section}{Refer\^encias}{6}{section*.6}%
