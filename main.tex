@@ -63,11 +63,19 @@ citestyle=abnt]{biblatex}       % For ABNT bibliography generation
 % \newenvironment{longlisting}{\captionsetup{type=listing}}{}
 % \SetupFloatingEnvironment{listing}{name=Código}
 
-% Sets page style to show page numbering on header
-\pagestyle{myheadings}
-
 % Definindo as margens
 \geometry{top=3cm,bottom=2cm,left=3cm,right=2cm}
+
+% Sets page style to show page numbering on header
+\pagestyle{fancy}
+
+\fancyhead{}
+\setlength\headheight{26pt}
+\fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+
 
 % Re-sets font size
 \makeatletter %only needed in preamble
