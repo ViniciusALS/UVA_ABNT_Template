@@ -18,3 +18,6 @@
 \uppercase\expandafter{\expanded{\city}}%%
 }
 
+\newcommand{\setAuthors}[1][Author's Name]{%
+    \newcommand{\printAuthors}{\uppercase{#1}}%
+}
