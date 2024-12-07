@@ -50,6 +50,12 @@ citestyle=abnt]{biblatex}       % For ABNT bibliography generation
 % Creates color variable names
 \definecolor{bgGrey}{rgb}{0.95,0.95,0.95}
 
+% Configures table of contents name
+\addto\captionsportuguese{%
+  \renewcommand{\contentsname}%
+    {\centering Sumário}%
+}
+
 % Configures minted
 % \setminted{
 % frame=lines,
@@ -92,10 +98,13 @@ citestyle=abnt]{biblatex}       % For ABNT bibliography generation
 \renewcommand\Large{\@setfontsize\Large{16pt}{22}}
 \makeatother
 
-% Configures table of contents name
-\renewcommand*\contentsname{\centering Sumário}
+\setTitleName[Título do Trabalho em Portugues]
+\setSubtitleName[Subtítulo do Trabalho em Portugues]
 
+\setTitleNameEnglish[Article Title in English]
+\setSubtitleNameEnglish[Article Subtitle in English]
 
+\setCity[Rio de Janeiro]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Document Body %%%%%%%%%%%%%%%%
