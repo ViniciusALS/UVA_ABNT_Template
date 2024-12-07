@@ -75,6 +75,12 @@ citestyle=abnt]{biblatex}       % For ABNT bibliography generation
 \fancyhead[R]{\thepage}
 \fancyfoot{}
 
+\fancypagestyle{pretext}{%
+    \fancyhf{}
+    \setlength\headheight{26pt}
+    \fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+}
+
 
 
 % Re-sets font size
@@ -101,6 +107,7 @@ citestyle=abnt]{biblatex}       % For ABNT bibliography generation
     
     \input{Tex/FolhaDeRosto}
     
+    \thispagestyle{pretext}
     \tableofcontents
     \newpage
     
