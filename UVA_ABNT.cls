@@ -12,11 +12,15 @@
 \renewcommand\Large{\@setfontsize\Large{16pt}{22}}
 \makeatother
 
-\newcommand{\setSubtitleName}[1][Subtitle Name]{\newcommand{\SubtitleName}{#1}}
 
-\newcommand{\setTitleNameEnglish}[1][Title Name]{\newcommand{\TitleNameEnglish}{#1}}
 
-\newcommand{\setSubtitleNameEnglish}[1][Subtitle Name]{\newcommand{\SubtitleNameEnglish}{#1}}
+\newcommand{\setTitle}[1][Title Name]{\newcommand{\TitleName}{#1}}
+
+\newcommand{\setSubtitle}[1][Subtitle Name]{\newcommand{\SubtitleName}{#1}}
+
+\newcommand{\setTitleEnglish}[1][Title Name]{\newcommand{\TitleNameEnglish}{#1}}
+
+\newcommand{\setSubtitleEnglish}[1][Subtitle Name]{\newcommand{\SubtitleNameEnglish}{#1}}
 
 
 \newcommand{\setCity}[1][City Name]{\newcommand{\city}{#1}}
@@ -28,3 +32,4 @@
 \newcommand{\setAuthors}[1][Author's Name]{%
     \newcommand{\printAuthors}{\uppercase{#1}}%
 }
+
