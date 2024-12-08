@@ -3,7 +3,14 @@
 
 \LoadClass[a4paper,12pt]{article}
 
-\newcommand{\setTitleName}[1][Title Name]{\newcommand{\TitleName}{#1}}
+% Re-sets font size
+\makeatletter %only needed in preamble
+\renewcommand\large{\@setfontsize\large{14pt}{19}}
+\makeatother
+
+\makeatletter %only needed in preamble
+\renewcommand\Large{\@setfontsize\Large{16pt}{22}}
+\makeatother
 
 \newcommand{\setSubtitleName}[1][Subtitle Name]{\newcommand{\SubtitleName}{#1}}
 
