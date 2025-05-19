@@ -18,10 +18,6 @@
 
 \newcommand{\setSubtitle}[1][Subtitle Name]{\newcommand{\SubtitleName}{#1}}
 
-\newcommand{\setTitleEnglish}[1][Title Name]{\newcommand{\TitleNameEnglish}{#1}}
-
-\newcommand{\setSubtitleEnglish}[1][Subtitle Name]{\newcommand{\SubtitleNameEnglish}{#1}}
-
 
 \newcommand{\setCity}[1][City Name]{\newcommand{\city}{#1}}
 
