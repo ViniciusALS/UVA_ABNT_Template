@@ -59,11 +59,15 @@
   linefill=\dotfill,
   numwidth=35pt,
   numsep=1ex,
-  dynnumwidth
-]{tocline}{chapter,section,subsection,subsubsection}
-\DeclareTOCStyleEntries[
+  dynnumwidth,
   indent=0pt
-]{tocline}{section,subsection,subsubsection}
+]{tocline}{chapter,section,subsection,subsubsection}
+
+\DeclareTOCStyleEntries[
+    entryformat=\bfseries,
+    entrynumberformat=\bfseries,
+    pagenumberformat=\bfseries
+]{tocline}{section, subsubsection}
 
 
 % Configures minted
@@ -99,7 +103,7 @@
 
 %  Edit section formating
 \titleformat{\section}
-    {\normalfont\bfseries}{\thesection}{1em}{\MakeUppercase{#1}}
+    {\normalfont\bfseries}{\thesection}{1em}{\uppercase{#1}}
 
 \titleformat{\subsection}
     {\normalfont}{\thesubsection}{1em}{\MakeUppercase{#1}}
