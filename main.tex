@@ -131,21 +131,32 @@
 
 \begin{document} 
 
-    \input{Tex/ParteExterna/Capa.tex}
+    %%%%%%%% Elementos Externos %%%%%%%%%%
+
+    \input{Tex/ParteExterna/Capa.tex} %% Página obrigatória
     
-    \input{Tex/Pretexto/FolhaDeRosto}
+    %%%%%%%% Elementos Pré-Textuais
+    
+    \input{Tex/Pretexto/FolhaDeRosto} %% Página obrigatória
+
+    \input{Tex/Pretexto/FolhaAprovacao} %% Página obrigatória
 
     \input{Tex/Pretexto/Epigrafe.tex} %% Página opcional
     
     \thispagestyle{pretext}
     \tableofcontents
     \newpage
+
+    %%%%%%%%% Elementos Textuais
+    
     
     \input{Tex/Corpo/Introducao.tex}
 
     \input{Tex/Corpo/Desenvolvimento.tex}
 
     \input{Tex/Corpo/Conclusao.tex}
+
+    %%%%%%%% Elementos Pós-Textuais
 
     \newpage
     \nocite{*}
