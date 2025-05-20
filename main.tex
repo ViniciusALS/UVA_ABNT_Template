@@ -13,7 +13,7 @@
 \usepackage{csquotes}
 \usepackage{geometry}           % To adjust page layout
 \usepackage{fancyhdr}           % For custom headers and footers
-\usepackage{hyperref}           % For hyperlinks
+\usepackage[linktoc=all]{hyperref}           % For hyperlinks
 \usepackage{bookmark}
 \usepackage{tikz}               % For drawing diagrams 
 \usepackage{enumitem}           % For customizing lists
@@ -27,6 +27,8 @@
 \usepackage{lipsum}
 \usepackage{biblatex}       % For ABNT bibliography generation
 \usepackage{tabularx}       % For multiple collumns 
+\usepackage[explicit]{titlesec}
+\usepackage{tocbasic}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,8 +52,19 @@
 % Configures table of contents name
 \addto\captionsportuguese{%
   \renewcommand{\contentsname}%
-    {\centering Sumário}%
+    {\hfill SUMÁRIO \hfill}%
 }
+
+\DeclareTOCStyleEntries[
+  linefill=\dotfill,
+  numwidth=35pt,
+  numsep=1ex,
+  dynnumwidth
+]{tocline}{chapter,section,subsection,subsubsection}
+\DeclareTOCStyleEntries[
+  indent=0pt
+]{tocline}{section,subsection,subsubsection}
+
 
 % Configures minted
 % \setminted{
@@ -114,18 +127,22 @@
 
 \begin{document} 
 
-    \input{Tex/Capa}
+    \input{Tex/ParteExterna/Capa.tex}
     
-    \input{Tex/FolhaDeRosto}
+    \input{Tex/Pretexto/FolhaDeRosto}
 
-    \input{Tex/FolhaAprovacao}
+    \input{Tex/Pretexto/FolhaAprovacao}
     
     \thispagestyle{pretext}
     \tableofcontents
     \newpage
     
-    \input{Tex/Corpo}
-    
+    \input{Tex/Corpo/Introducao.tex}
+
+    \input{Tex/Corpo/Desenvolvimento.tex}
+
+    \input{Tex/Corpo/Conclusao.tex}
+
     \newpage
     \nocite{*}
     % \printbibliography[heading=bibintoc]
