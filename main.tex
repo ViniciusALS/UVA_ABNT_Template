@@ -38,7 +38,7 @@
 
 % Configures biblatex
 \addbibresource{Referencias.bib}
-\AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\textsc{#1}}}
+% \AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\textsc{#1}}}
 
 
 % Sets lineheight
@@ -56,13 +56,23 @@
     {\hfill SUMÁRIO \hfill}%
 }
 
+\addto\captionsportuguese{
+    \renewcommand{\listfigurename}
+    {\hfill LISTA DE ILUSTRAÇÕES \hfill}
+}
+
+\addto\captionsportuguese{
+    \renewcommand{\listtablename}
+    {\hfill LISTA DE TABELAS \hfill}
+}
+
 \DeclareTOCStyleEntries[
   linefill=\dotfill,
   numwidth=35pt,
   numsep=1ex,
   dynnumwidth,
   indent=0pt
-]{tocline}{chapter,section,subsection,subsubsection}
+]{tocline}{chapter, section, subsection, subsubsection}
 
 \DeclareTOCStyleEntries[
     entryformat=\bfseries,
@@ -113,6 +123,11 @@
   {\normalfont\bfseries}{\thesubsubsection}{1em}{{#1}}
 
 
+  \captionsetup[figure]{font=small,labelfont=small}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Valores do Documento %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,6 +167,8 @@
 
     \input{Tex/Pretexto/ResumoEstrangeiro.tex} %% Página obrigatória
     
+    \input{Tex/Pretexto/Listas.tex}
+    
     \thispagestyle{pretext}
     \tableofcontents
     \newpage
@@ -168,7 +185,6 @@
     %%%%%%%% Elementos Pós-Textuais
 
     \newpage
-    \nocite{*}
-    % \printbibliography[heading=bibintoc]
-
+    % \nocite{*}
+    \printbibliography[heading=bibintoc, title={\hfill REFERÊNCIAS \hfill}]
 \end{document}
