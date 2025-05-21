@@ -1,6 +1,6 @@
 \section{DESENVOLVIMENTO}
 
-\lipsum[2] \\
+\lipsum[2] 
 
 \lipsum[3]
 
@@ -25,11 +25,15 @@ Títulos que ocupem mais de uma linha devem ser, a partir da segunda linha, alin
 
 \subsubsection{Exemplo}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
-    \includegraphics[width=0.9\textwidth]{Figuras/exemplo_sumario.png} % Change to the path of your image
-    \caption{Exemplo de um sumário.}
-    \label{fig:exemplo_sumario}
+    \begin{small}
+        \caption{Exemplo de um sumário.}
+        \includegraphics[width=0.9\textwidth]{Figuras/exemplo_sumario.png} % Change to the path of your image
+        \label{fig:exemplo_sumario}
+
+        Fonte: elaborado pelo autor (2025)
+    \end{small}
 \end{figure}
 
 \newpage
@@ -54,6 +58,64 @@ Títulos que ocupem mais de uma linha devem ser, a partir da segunda linha, alin
 
 \newpage
 
+\subsection{IMAGENS}
+
+\subsubsection{Como citar figuras?}
+
+Antes de incluir qualquer elemento visual na sua pesquisa, é importante que você faça a menção no texto. Vamos supor que você pretende incluir uma imagem que mostre o processo de atendimento ao cliente realizado por uma determinada empresa. Isso poderia ser feito da seguinte forma:
+
+''Para atender o consumidor com qualidade, é necessário que a organização tenha um processo de atendimento (figura 1) muito bem estruturado.'' 
+
+ Ou assim: 
+
+``Atender o cliente com qualidade é uma forma de satisfazê-lo e fidelizá-lo. Para isso, é fundamental definir uma metodologia eficiente. A figura 1 mostra o processo de atendimento executado pela empresa xyz.`` 
+
+Depois, você deve colocar a figura centralizada, próxima ao trecho ao qual ela se refere.
+
+\subsubsection{Insira legenda e fonte}
+
+Na parte superior da ilustração, é preciso escrever a legenda para mostrar o que está sendo retratado na imagem. Desse modo, coloque a palavra “figura”, o número que corresponde à ordem em que ela aparece no texto e o título. Por exemplo: 
+
+Figura 1– Processo de atendimento ao cliente da empresa xyz 
+
+Na parte inferior , indique a fonte de onde retirou a figura. Para isso, escreva o termo “fonte”, o sobrenome do autor e o ano de publicação. 
+
+Fonte: Marques (2019)  
+
+Caso você seja o autor da foto, faça da seguinte forma: 
+
+Fonte: elaborado pelo autor (2020) 
+
+\begin{figure}[ht]
+    \centering
+    \begin{small}
+        \caption{Figura de exemplo.}
+        \includegraphics[width=0.3\textwidth]{Figuras/placeholder_photo.jpg} % Change to the path of your image
+        \label{fig:exemplo_fig}
+        
+        Fonte: elaborada pelo autor (2025)
+    \end{small}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Imagens em LaTex}
+
+Você pode referenciar uma imagem em \LaTeX, usando \verb|autoref| e \verb|label|. Exemplo:
+
+''Para atender o consumidor com qualidade, é necessário que a organização tenha um processo de atendimento (\autoref{fig:exemplo_fig_2}) muito bem estruturado.''
+
+\begin{figure}[ht]
+    \centering
+    \begin{small}
+        \caption{Outra figura de exemplo.}
+        \includegraphics[width=0.5\textwidth]{Figuras/placeholder_photo.jpg} % Change to the path of your image
+        \label{fig:exemplo_fig_2}
+        
+        Fonte: elaborada pelo autor (2025)
+    \end{small}
+\end{figure}
+
 \subsection{MATEMÁTICA}
 
 You can use mathematical formatting, such as:
@@ -65,9 +127,11 @@ or numbered equations like:
     E = mc^2
 \end{equation}
 
+\newpage
+
 \subsection{FAZENDO REFERENCIAS BIBLIOGRÁFICAS}
 
-% Para fazer referencias bibliograficas em LaTex, voce deve usar o comando \cite{dirac} para fazer uma citação à algum artigo mencionado no arquivo \texttt{Referencias.bib}.
+Para fazer referencias bibliograficas em LaTex, voce deve usar o comando \cite{dirac} para fazer uma citação à algum artigo mencionado no arquivo \texttt{Referencias.bib}.
 
 % \cite{website:ArduinoLabview}
 % \cite{website:OPENSOURCESW}
