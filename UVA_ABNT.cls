@@ -12,6 +12,10 @@
 \renewcommand\Large{\@setfontsize\Large{16pt}{22}}
 \makeatother
 
+\makeatletter %only needed in preamble
+\renewcommand\large{\@setfontsize\small{10pt}{12}}
+\makeatother
+
 
 
 \newcommand{\setTitle}[1][Title Name]{\newcommand{\TitleName}{#1}}
