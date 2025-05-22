@@ -25,11 +25,17 @@
 % \usepackage[newfloat]{minted}   % For formated blocks of code
 \usepackage{caption}
 \usepackage{lipsum}
-\usepackage{biblatex}       % For ABNT bibliography generation
+\usepackage[
+    style = abnt,               % Sistema alfabético
+    % style = abnt-numeric,     % Sistema numérico
+    % style = abnt-ibid,        % Notas de referência
+]{biblatex}                     % For ABNT bibliography generation
 \usepackage{tabularx}       % For multiple collumns 
 \usepackage[explicit]{titlesec}
 \usepackage{tocbasic}
 \usepackage{setspace}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,7 +75,7 @@
 \DeclareTOCStyleEntries[
   linefill=\dotfill,
   numwidth=35pt,
-  numsep=1ex,
+%   numsep=1ex,
   dynnumwidth,
   indent=0pt
 ]{tocline}{chapter, section, subsection, subsubsection}
@@ -124,7 +130,6 @@
 
 
   \captionsetup[figure]{font=small,labelfont=small}
-
 
 
 
@@ -185,6 +190,8 @@
     %%%%%%%% Elementos Pós-Textuais
 
     \newpage
-    % \nocite{*}
-    \printbibliography[heading=bibintoc, title={\hfill REFERÊNCIAS \hfill}]
+    \nocite{*}
+    \phantomsection
+    \printbibliography[title={\hfill REFERÊNCIAS \hfill}]
+    \addcontentsline{toc}{section}{\string\numberline{}REFERÊNCIAS}
 \end{document}

@@ -21,41 +21,230 @@
     keywords = {physics}
 }
 
-@online{knuthwebsite,
-    author = "Donald Knuth",
-    title = "Knuth: Computers and Typesetting",
-    url  = "http://www-cs-faculty.stanford.edu/~uno/abcde.html",
-    addendum = "(accessed: 01.09.2016)",
-    keywords = "latex,knuth"
+% Um obra que abrange múltiplos volumes
+@mvbook{assis08,
+    author = {Machado de Assis},
+    title = {Obra completa em quatro volumes},
+    year = {2008},
+    editor = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    editortype = {organizer},
+    edition = {2},
+    volumes = {4},
+    publisher = {Nova Fronteira},
+    location = {Rio de Janeiro},
+    series = {Biblioteca luso-brasileira.
+    Série brasileira},
 }
 
-@inbook{knuth-fa,
-    author = "Donald E. Knuth",
-    title = "Fundamental Algorithms",
-    publisher = "Addison-Wesley",
-    year = "1973",
-    chapter = "1.2",
-    keywords  = "knuth,programming"
+% Livro de volume único
+@book{assis08:1,
+    volume = {1},
+    title = {Fortuna crítica/Romance},
+    pagetotal = {1340},
+    author = {Machado de Assis},
+    maintitle = {Obra completa em quatro volumes},
+    year = {2008},
+    editor = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    editortype = {organizer},
+    edition = {2},
+    publisher = {Nova Fronteira},
+    location = {Rio de Janeiro},
+    series = {Biblioteca luso-brasileira.
+    Série brasileira},
 }
 
-@misc{website:ArduinoLabview,
-  author  = {{National Instruments}},
-  title   = {Arduino™ Compatible Compiler for LabVIEW by Aledyne-TSXperts},
-  year    = {2019},
-  url     = {https://www.tsxperts.com/arduino-compatible-compiler-for-labview/},
-  urldate = {2019-06-07},
+% Uma obra originalmente publicada por si só, mas citada como parte de outro livro:
+@bookinbook{assis08:1b,
+    title = {Esaú e Jacó},
+    pages = {1073-1226},
+    volume = {1},
+    booktitle = {Fortuna crítica/Romance},
+    pagetotal = {1340},
+    author = {Machado de Assis},
+    maintitle = {Obra completa em quatro volumes},
+    year = {2008},
+    editor = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    editortype = {organizer},
+    edition = {2},
+    publisher = {Nova Fronteira},
+    location = {Rio de Janeiro},
+    series = {Biblioteca luso-brasileira.
+    Série brasileira},
 }
-@misc{website:OPENSOURCEHW,
-  author      = {{Red Hat, Inc.}},
-  shortauthor = {{Red Hat}},
-  title       = {What is open hardware?},
-  url         = {https://opensource.com/resources/what-open-hardware},
-  urldate     = {2019-06-07}
+
+% Uma parte de um livro que forma uma unidade independente, com seu próprio título
+@inbook{bosi08,
+    title = {Uma figura machadiana},
+    author = {Alfredo Bosi},
+    pages = {179-189},
+    volume = {1},
+    booktitle = {Fortuna crítica/Romance},
+    pagetotal = {1340},
+    bookauthor = {Machado de Assis},
+    maintitle = {Obra completa em quatro volumes},
+    year = {2008},
+    editor = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    editortype = {organizer},
+    edition = {2},
+    publisher = {Nova Fronteira},
+    location = {Rio de Janeiro},
+    series = {Biblioteca luso-brasileira.
+    Série brasileira},
 }
-@misc{website:OPENSOURCESW,
-  author      = {{Red Hat, Inc.}},
-  shortauthor = {{Red Hat}},
-  title       = {What is open source?},
-  url         = {https://opensource.com/resources/what-open-source},
-  urldate     = {2019-06-07}
+
+% Uma parte suplementar de um livro, com um título genérico, como “prefácio” ou “introdução”:
+@suppbook{leite08,
+    title = {Nota Editorial},
+    author = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    pages = {1-5},
+    volume = {1},
+    booktitle = {Fortuna crítica/Romance},
+    pagetotal = {1340},
+    bookauthor = {Machado de Assis},
+    maintitle = {Obra completa em quatro volumes},
+    year = {2008},
+    editor = {Aluizio Leite and
+    Ana Lima Cecilio and Heloisa Jahn},
+    editortype = {organizer},
+    edition = {2},
+    publisher = {Nova Fronteira},
+    location = {Rio de Janeiro},
+    series = {Biblioteca luso-brasileira.
+    Série brasileira},
+}
+
+% Uma coleção abrangendo diversos volumes, cada um composto por diversas contribuições independentes, com seus próprios autores e títulos. A obra como um todo não possui um autor, mas geralmente possui um editor:
+@mvcollection{moretti09,
+    editor = {Franco Moretti},
+    editortype = {organizer},
+    translator = {Denise Bottmann},
+    title = {O Romance},
+    volumes = {5},
+    publisher = {Cosac Naify},
+    location = {São Paulo},
+    year = {2009},
+}
+
+% Um único livro constituindo uma coleção composta por diversas contribuições independentes. Pode ser um dos volumes de uma coleção que abrange múltiplos volumes (@mvcollection):
+@collection{moretti09:1,
+    volume = {1},
+    title = {A cultura do romance},
+    pagetotal = {1120},
+    illustrated = {40 ils.},
+    editor = {Franco Moretti},
+    editortype = {organizer},
+    translator = {Denise Bottmann},
+    maintitle = {O Romance},
+    publisher = {Cosac Naify},
+    location = {São Paulo},
+    year = {2009},
+}
+
+% Uma contribuição a uma coleção, formando uma unidade independente, com autor e título próprios
+@incollection{mann09,
+    author = {Thomas Mann},
+    title = {Bilse e eu},
+    pages = {217},
+    volume = {1},
+    booktitle = {A cultura do romance},
+    pagetotal = {1120},
+    illustrated = {40 ils.},
+    editor = {Franco Moretti},
+    editortype = {organizer},
+    translator = {Denise Bottmann},
+    maintitle = {O Romance},
+    publisher = {Cosac Naify},
+    location = {São Paulo},
+    year = {2009},
+}
+
+% Uma parte suplementar de uma coleção, com um título genérico, como “prefácio” ou “introdução”:
+@suppcollection{moretti09:1b,
+    title = {Apresentação geral},
+    author = {Franco Moretti},
+    pages = {217},
+    volume = {1},
+    booktitle = {A cultura do romance},
+    pagetotal = {1120},
+    illustrated = {40 ils.},
+    editor = {Franco Moretti},
+    editortype = {organizer},
+    translator = {Denise Bottmann},
+    maintitle = {O Romance},
+    publisher = {Cosac Naify},
+    location = {São Paulo},
+    year = {2009},
+}
+
+% Um artigo científico/acadêmico:
+@article{negrão14,
+    title = {Brazilian Portuguese as a
+    transatlantic language},
+    subtitle = {agents of linguistic contact},
+    author = {Esmeralda Vailati Negrão and Evani Viotti},
+    journal = {Interdisciplinary Journal of
+    Portuguese Diaspora Studies},
+    volume = {3},
+    pages = {135-154},
+    year = {2014},
+}
+
+% Uma dissertação de mestrado
+@thesis{eliseu84,
+    title = {Verbos ergativos do Português},
+    subtitle = {descrição e análise},
+    author = {André Manuel Godinho Simões Eliseu},
+    type = {Dissertação (Mestrado em Linguística)},
+    institution = {Universidade de Lisboa},
+    location = {Lisboa},
+    eventyear = {1985},
+}
+
+% Trabalhos publicados em resumos ou anais de eventos
+@inproceedings{negrão13,
+    title = {A emergência da sintaxe do
+    português brasileiro},
+    subtitle = {absolutas, alçamento do
+    possuidor e passivas},
+    author = {Esmeralda Vailati Negrão and Evani Viotti},
+    eventtitle = {Encontro nacional do gt de
+    teoria da gramática da ANPOLL},
+    number = {28},
+    venue = {Florianópolis},
+    eventyear = {2013},
+    booktitle = {Caderno de Resumos},
+    publisher = {ANPOLL},
+    location = {Campinas},
+    year = {2013},
+}
+
+@article{negrão15,
+    title = {Brazilsdian Portuguese as a
+    transatlantic language},
+    subtitle = {agents of linguistic contact},
+    author = {Esmeralda Vailati Negrão and Evani Viotti},
+    journal = {Interdisciplinary Journal of
+    Portuguese Diaspora Studies},
+    volume = {3},
+    pages = {135-154},
+    year = {2014},
+}
+
+@article{industra40,
+    title = {Conceitos e tecnologias da Indústria 4.0},
+    subtitle = {uma análise bibliométrica},
+    author = {Faíque Ribeiro Lima and Rogério Gomes},
+    journal = {Revista Brasileira de Inovação},
+    location = {Campinas, SP},
+    volume = {19},
+    pages = {1-30},
+    year = {2020},
+    doi = {10.20396/rbi.v19i0.8658766},
+    url = {https://periodicos.sbu.unicamp.br/ojs/index.php/rbi/article/view/8658766},
+    urldate = {2025-05-22}
 }
