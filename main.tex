@@ -8,33 +8,33 @@
 \usepackage{times}              % Sets font to Times New Roman
 
 \usepackage[utf8]{inputenc}     % Configures encoding to portuguese
-\usepackage[T1]{fontenc}        % Configures encoding to portuguese  
+\usepackage[T1]{fontenc}        % Configures encoding to portuguese
 \usepackage[portuguese]{babel}  % Configures encoding to portuguese
-\usepackage{csquotes}
 \usepackage{geometry}           % To adjust page layout
 \usepackage{fancyhdr}           % For custom headers and footers
-\usepackage[linktoc=all]{hyperref}           % For hyperlinks
+\usepackage[linktoc=all, hidelinks]{hyperref}           % For hyperlinks
 \usepackage{bookmark}
-\usepackage{tikz}               % For drawing diagrams 
+\usepackage{tikz}               % For drawing diagrams
 \usepackage{enumitem}           % For customizing lists
-\usepackage{graphicx}           % For including graphics 
+\usepackage{graphicx}           % For including graphics
 \usepackage{changepage}
 \usepackage{relsize}
 \usepackage{indentfirst}        % Indents first paragraph
 \usepackage{listings}           % For lists of things
-% \usepackage[newfloat]{minted}   % For formated blocks of code
+\usepackage[newfloat]{minted}   % For formated blocks of code
 \usepackage{caption}
 \usepackage{lipsum}
+\usepackage{csquotes}
 \usepackage[
     style = abnt,               % Sistema alfabético
     % style = abnt-numeric,     % Sistema numérico
     % style = abnt-ibid,        % Notas de referência
 ]{biblatex}                     % For ABNT bibliography generation
-\usepackage{tabularx}       % For multiple collumns 
+\usepackage{tabularx}       % For multiple collumns
 \usepackage[explicit]{titlesec}
 \usepackage{tocbasic}
 \usepackage{setspace}
-
+\usepackage{amssymb}
 
 
 
@@ -48,7 +48,7 @@
 
 
 % Sets lineheight
-\renewcommand{\baselinestretch}{1.5} 
+\renewcommand{\baselinestretch}{1.5}
 
 % Sets figure counter name
 \renewcommand{\figurename}{Imagem}
@@ -88,17 +88,22 @@
 
 
 % Configures minted
-% \setminted{
-% frame=lines,
-% framesep=2mm,
-% baselinestretch=1,
-% bgcolor=bgGrey,
-% fontsize=\footnotesize,
-% linenos
-% }
+\setminted{
+frame=single,
+framesep=1mm,
+baselinestretch=1,
+obeytabs=true,
+tabsize=4,
+bgcolor=bgGrey,
+fontsize=\footnotesize,
+linenos,
+breaklines,
+breaksymbolleft=\space,
+xleftmargin=20pt,
+}
 
-% \newenvironment{longlisting}{\captionsetup{type=listing}}{}
-% \SetupFloatingEnvironment{listing}{name=Código}
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Código}
 
 % Definindo as margens
 \geometry{top=3cm,bottom=2cm,left=3cm,right=2cm}
@@ -150,12 +155,12 @@
 %%%%%%%%%%%%%% Document Body %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{document} 
+\begin{document}
 
     %%%%%%%% Elementos Externos %%%%%%%%%%
 
     \input{Tex/ParteExterna/Capa.tex} %% Página obrigatória
-    
+
     %%%%%%%% Elementos Pré-Textuais
 
     \input{Tex/Pretexto/FolhaDeRosto} %% Página obrigatória
@@ -171,15 +176,15 @@
     \input{Tex/Pretexto/Resumo.tex} %% Página obrigatória
 
     \input{Tex/Pretexto/ResumoEstrangeiro.tex} %% Página obrigatória
-    
+
     \input{Tex/Pretexto/Listas.tex}
-    
+
     \thispagestyle{pretext}
     \tableofcontents
     \newpage
 
     %%%%%%%%% Elementos Textuais
-    
+
 
     \input{Tex/Corpo/Introducao.tex}
 
