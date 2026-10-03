@@ -15,6 +15,9 @@
 \usepackage[linktoc=all, hidelinks]{hyperref}           % For hyperlinks
 \usepackage{bookmark}
 \usepackage{tikz}               % For drawing diagrams
+\usetikzlibrary{positioning}       % For drawing diagrams
+\usetikzlibrary{shapes.geometric, arrows}
+\usetikzlibrary{er}
 \usepackage{enumitem}           % For customizing lists
 \usepackage{graphicx}           % For including graphics
 \usepackage{changepage}
@@ -23,6 +26,7 @@
 \usepackage{listings}           % For lists of things
 \usepackage[newfloat]{minted}   % For formated blocks of code
 \usepackage{caption}
+\usepackage{subcaption}
 \usepackage{lipsum}
 \usepackage{csquotes}
 \usepackage[
@@ -35,7 +39,27 @@
 \usepackage{tocbasic}
 \usepackage{setspace}
 \usepackage{amssymb}
+\usepackage{forest}
+\usepackage{float}              % For fixed figure positioning with [H]
+\usepackage{pgfgantt}
 
+
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}
+
+\tikzstyle{elem} = [rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm,text centered, draw=black, fill=yellow!20]
+
+\tikzstyle{arrow} = [thick,<->,>=stealth]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,14 +137,14 @@ xleftmargin=20pt,
 
 \fancyhead{}
 \setlength\headheight{26pt}
-\fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+\fancyhead[L]{\includegraphics[width=2cm]{Figuras/UVA/uva_header.png}}
 \fancyhead[R]{\thepage}
 \fancyfoot{}
 
 \fancypagestyle{pretext}{%
     \fancyhf{}
     \setlength\headheight{26pt}
-    \fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+    \fancyhead[L]{\includegraphics[width=2cm]{Figuras/UVA/uva_header.png}}
 }
 
 %  Edit section formating
@@ -145,10 +169,7 @@ xleftmargin=20pt,
 
 \setTitle[Título do Trabalho em Portugues]
 \setSubtitle[Subtítulo do Trabalho em Portugues]
-
 \setCity[Rio de Janeiro]
-
-\setAuthors[Vinicius DE AZEVEDO LIMA E SOUZA \\ 1240201902]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
