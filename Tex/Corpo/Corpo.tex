@@ -139,6 +139,39 @@ Para fazer referencias bibliograficas em LaTex, voce deve usar o comando \cite{d
 
 \section{CONCLUSÃO}
 
+\begin{itemize}[noitemsep]
+    \item as quatro operações: + , - , * , /
+    \item números inteiros e decimais ( 42 , 3.14 , .5 );
+    \item parênteses para alterar a ordem de avaliação;
+    \item sinal unário ( -5 , -(2 + 3) , +4 )
+    \item precedência correta ( * e / antes de + e - ) e associatividade à esquerda ( 10 - 2 - 3 = 5 , 100 / 10 / 2 = 5 );
+    \item uma expressão por linha, com vários cálculos na mesma execução;
+    \item detecção de erros léxicos, sintáticos e de divisão por zero, informando a linha, sem encerrar o programa.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{\small Arquivos do projeto}
+\begin{tabularx}{\textwidth}{l | X}
+\hline
+\textbf{Arquivo} & \textbf{Conteúdo} \\
+\hline
+Cal.l & Especificação léxica (Flex) \\
+Cal.y & Gramática e ações semânticas (Bison), função main \\
+Makefile & Regras de compilação \\
+testes.txt & Expressões de teste \\
+\hline
+\end{tabularx}
+\bigbreak
+\small Fonte: elaborado pelos autores (2026)
+\end{table}
+
+\begin{longlisting}
+    \label{codigo:makefile}
+    \caption{Código fonte do Makefile para a calculadora}
+    \inputminted{make}{Codigos/Makefile}
+\end{longlisting}
+
 \lipsum[3]
 
 % \cite{website:ArduinoLabview}
